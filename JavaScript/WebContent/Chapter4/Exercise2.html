@@ -2,9 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Exercise 2</title>
 </head>
 <body>
-
+	<script>
+	function userPrompt(){
+	while(true){
+	var no = prompt("Enter number : ");
+	if(no == -1) break;
+	timeTables(no);
+	}
+	}
+	function timeTables(number){
+		if(number <= -2 || number > 12) alert("Number should be between 0 and 12");
+		for(var i = 0; i < 13; i++){
+			var calculation = number * i;
+			document.write(number + " * " + i  + " = " + calculation + '<br/>')
+		}
+	}
+	userPrompt();
+	</script>
 </body>
 </html>
