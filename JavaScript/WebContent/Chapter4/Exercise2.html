@@ -9,12 +9,13 @@
 	function userPrompt(){
 	while(true){
 	var no = prompt("Enter number : ");
-	if(no == -1) break;
-	timeTables(no);
+	if(no <= -2 || no > 12) alert("Number should be between 0 and 12");
+	else if(no == -1) break;
+	else timeTables(no);
 	}
+	
 	}
 	function timeTables(number){
-		if(number <= -2 || number > 12) alert("Number should be between 0 and 12");
 		for(var i = 0; i < 13; i++){
 			var calculation = number * i;
 			document.write(number + " * " + i  + " = " + calculation + '<br/>')
