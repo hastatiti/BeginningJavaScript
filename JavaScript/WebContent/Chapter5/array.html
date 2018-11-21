@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var names = [];
+		names.push("Jack");
+		names.push("Paul");
+		document.write(names + "<br>");
+		document.write(" After 'concat' : ")
+		var secondArray = [ 0 , 1 , 2];
+		var concatArray = names.concat(secondArray)
+		document.write(concatArray + "<br>");
+		document.write(" After 'slice(1,3)' : ");
+		document.write(concatArray.slice(1,3) +"<br>");
+		document.write(" Converting an Array into a Single String : " +"<br>");
+		document.write(secondArray.join( "<br>"));
+	</script>
+</body>
+</html>
