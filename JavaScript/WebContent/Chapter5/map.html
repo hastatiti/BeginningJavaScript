@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var numbers = [ 1, 2, 3, 4, 5 ];
+		
+		function doubleAndReturn(value, index, array){
+			var result = value * 2;
+			return result;
+		}
+		
+		var doubledNumbers = numbers.map(doubleAndReturn);
+		alert(doubledNumbers);
+	</script>
+</body>
+</html>
