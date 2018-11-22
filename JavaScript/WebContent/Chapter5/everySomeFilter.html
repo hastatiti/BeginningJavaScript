@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var numbers = [ 1, 2, 3, 4, 5 ];
+		
+		function isLessThan3(value, index, array){
+			var returnValue = false;
+			
+			if(value < 3){
+				returnValue = true;
+			}
+			return returnValue;
+		}
+		var every = numbers.every(isLessThan3);
+		alert("Are every numbers less than 3 :\n\n" +  every);
+		var some = numbers.some(isLessThan3);
+		alert("Are some numbers less than 3 :\n\n" +  some);
+	
+		if(numbers.some(isLessThan3)){
+			var result = numbers.filter(isLessThan3);
+			alert("Filtered results :\n\n" + result);
+		}
+	</script>
+</body>
+</html>
