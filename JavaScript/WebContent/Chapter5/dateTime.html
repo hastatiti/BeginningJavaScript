@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		 var myDate = new Date("1 Jan 2010");
+		//will set the date to "1 Feb 2010" not 32nd of Jan, not error
+		myDate.setDate(32);
+		document.write(myDate + "<br>"); 
+
+		var nowDate = new Date();
+		var currentDay = nowDate.getDate();
+		nowDate.setDate(currentDay + 10);
+		document.write(nowDate.getDate());
+	</script>
+</body>
+</html>
