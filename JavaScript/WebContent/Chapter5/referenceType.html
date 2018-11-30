@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reefrence Type</title>
+</head>
+<body>
+	<script>
+		function Person(firstName, lastName) {
+			this.firstName = firstName;
+			this.lastName = lastName;
+		}
+		Person.prototype.getFullName = function() {
+			return this.firstName + " " + this.lastName;
+		}
+		Person.prototype.greet = function(person) {
+			alert("Hello, " + person.getFullName() + ". I'm "
+					+ this.getFullName());
+		};
+		var johnDoe = new Person("John", "Doe");
+		var janeDoe = new Person("Jane", "Doe");
+		janeDoe.greet(johnDoe);
+	</script>
+</body>
+</html>
